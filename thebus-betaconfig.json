@@ -1,0 +1,17 @@
+[
+    {
+        "DisplayName": "Zusätzliche Startparameter",
+        "Category": "The Bus:stadia_controller",
+        "Subcategory": "Start:rocket_launch:1",
+        "Keywords": "arguments,args,parameter,launch,startup,commandline",
+        "Description": "Optionale zusätzliche Unreal-Engine-Startparameter, die an TheBusServer.exe angehängt werden. Port, Query-Port und Logging sind bereits fest gesetzt. Leer lassen, wenn nicht benötigt.",
+        "FieldName": "AdditionalArgs",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "AdditionalArgs",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "Placeholder": "",
+        "EnumValues": {}
+    }
+]

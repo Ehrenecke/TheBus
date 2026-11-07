@@ -1,0 +1,28 @@
+[
+    {
+        "UpdateStageName": "SteamCMD Server Download (Public)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "507320",
+        "UpdateSourceArgs": "491540",
+        "UpdateSourceVersion": "public",
+        "ForceDownloadPlatform": "Windows",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Create Config Directory",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}TheBus/Saved/Config/WindowsServer",
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Create Log Directory",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}TheBus/Saved/Logs",
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "Protocol": "UDP",
+        "Port": 7777,
+        "Ref": "GamePort",
+        "Name": "Game Port",
+        "Description": "Spielverkehr der Spieler (Startparameter -port). UDP in der Firewall freigeben."
+    },
+    {
+        "Protocol": "UDP",
+        "Port": 27015,
+        "Ref": "QueryPort",
+        "Name": "Query Port",
+        "Description": "Steam-/Server-Query (Startparameter -QueryPort). UDP in der Firewall freigeben."
+    }
+]
