@@ -51,24 +51,15 @@ Alle Dateien müssen kleingeschrieben im Repository-Root liegen, ohne Unterordne
 
 ## Installation in AMP
 
-1. Auf dem AMP-Server muss **Git** installiert sein (`git --version`). Nach der Installation AMP bzw. den Server neu starten.
-2. In AMP: Instanz **ADS01** → *Configuration* → *Instance Deployment* → *Configuration Repositories* → **Add**:
+1. In AMP: Instanz **ADS01** → *Configuration* → *Instance Deployment* → *Configuration Repositories* → **Add**:
    ```
    Ehrenecke/TheBus:main
    ```
-3. **Fetch Latest** klicken, Browser neu laden (Strg+F5).
-4. *Create Instance* → „Custom / The Bus“ oder „Custom / The Bus (Beta)“ wählen.
-5. Nach dem Anlegen **Update** klicken (lädt ca. 3,8 GB), danach starten.
+2. **Fetch Latest** klicken, Browser neu laden (Strg+F5).
+3. *Create Instance* → „Custom / The Bus“ oder „Custom / The Bus (Beta)“ wählen.
+4. Nach dem Anlegen **Update** klicken (lädt ca. 3,8 GB), danach starten.
 
 Spätere Änderungen am Template übernehmen bereits erstellte Instanzen nicht. Instanz neu erstellen.
-
-## Wenn die Vorlage nicht erscheint
-
-AMP meldet fehlerhafte Repositories nicht, es lässt sie still weg.
-- `git --version` auf dem Server prüfen.
-- Das Repository muss öffentlich sein, die Dateien direkt im Root liegen und exakt so heißen wie oben.
-- Im Verzeichnis `~amp/.ampdata/instances/ADS01/Plugins/ADSModule/DeploymentTemplates/` muss ein Ordner `Ehrenecke-TheBus-main` mit `manifest.json` und `thebus.kvp` liegen.
-- Alternative ohne Git: Ordner `LOCAL-thebus-main` im selben Verzeichnis anlegen, die Dateien hineinkopieren, `chown -R amp:amp LOCAL-thebus-main`, ADS neu starten.
 
 ## Bekannte Einschränkungen
 
